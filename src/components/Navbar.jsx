@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <nav className="mb-28  flex items-center justify-between py-8 ">
+      <nav className="mb- lg:mb-28  flex items-center justify-between py-8 ">
         <div className="flex items-center gap-4">
           <div className="block lg:hidden">
             <button
@@ -20,16 +20,16 @@ const Navbar = () => {
             </button>
           </div>
           <img className="w-14  " src={logo} alt="logo" />
-        </div>
-
-        {/* Navigation Links */}
+        </div>        
+        {/* Navigation Links */}        
         <div
-          className={`absolute top-20 w-[250px] h-auto rounded-md py-4 px-6 transition-all duration-300 
-    ${menuOpen ? "translate-x-0 backdrop-blur-xl bg-white/10" : "hidden"} 
-    lg:translate-x-0 lg:static lg:flex lg:w-auto lg:shadow-none lg:rounded-none lg:py-0 lg:px-0 lg:backdrop-blur-none lg:bg-transparent gap-10`}
+          className={`absolute top-20  z-50 left-1/2 transform -translate-x-1/2 w-4/5  h-auto rounded-md py-4 px-6 transition-all duration-300 
+                        ${menuOpen ? "flex flex-col items-center backdrop-blur-3xl bg-white/20" : "hidden"} 
+                      lg:translate-x-0 lg:translate-y-0 lg:static lg:flex lg:w-auto lg:shadow-none lg:rounded-none lg:py-0 lg:px-0 lg:backdrop-blur-none lg:bg-transparent gap-5`}
         >
+
           <div className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
-            <span className="text-white hover:bg group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
+            <span className="text-white hover:bg group-hover:text- group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
               About me
             </span>
             <span
@@ -59,7 +59,7 @@ const Navbar = () => {
             <span
               className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
             ></span>
-          </div>
+            </div>          
         </div>
 
         {/* Social Media Icons */}
