@@ -40,7 +40,7 @@ const Home = () => {
           </span>
         </div>
         {/* Paragraph Section */}
-        <p className="py-2 mt-8 text-sm lg:text-base  text-gray-300 max-w-sm lg:max-w-lg text-center lg:text-justify ">
+        <p className="py-2 mt-8 text-sm lg:text-base  text-gray-300 max-w-sm lg:max-w-lg text-justify ">
           {HERO_CONTENT}
         </p>
 
