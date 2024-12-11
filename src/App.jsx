@@ -1,7 +1,10 @@
 import About from "./components/About";
-import Experience from "./components/Experience";
+import Contact from "./components/Contact";
+import ContactButton from "./components/ContactButton";
+import Skills from "./components/Skills";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
 import Technologies from "./components/Technologies";
 
 const App = () => {
@@ -13,12 +16,15 @@ const App = () => {
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto lg:px-20 px-6">
+      <div className="container felx flex-col ">
         <Navbar />
         <Home />
         <About />
         <Technologies />
-        <Experience />
+        <Skills />
+        <Projects />
+        <Contact />
+        <ContactButton />
       </div>
     </div>
   );
