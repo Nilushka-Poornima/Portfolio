@@ -1,16 +1,41 @@
 import React, { useState } from "react";
 import logo from "../assets/Np.png";
 import { SlMenu } from "react-icons/sl";
+import { motion } from "motion/react"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const animation = (delay) => ({
+    hidden: { y: -100, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.8, delay },
+    },
+  });
 
+  const menuVariants = (duration) => ({
+    initial: { y: -6 },
+    animate: {
+      y: [6, -6],
+      transition: {
+        duration: duration,
+        ease: "linear",
+        repeat: Infinity,
+        repeatType: "reverse",
+      },
+    },
+  });
 
   return (
-    <div className="">
-      <nav className="mb- lg:mb-28  flex items-center justify-between py-8 ">
-        <div className="flex items-center gap-4">
+    <motion.div
+      variants={animation(0)}
+      initial="hidden"
+      animate="visible"
+      className="fixed z-50 w-full backdrop-blur-lg bg-opacity-50">
+      <nav className="flex items-center justify-between lg:px-16 px-3 py-6 w-full">
+        <div className="flex items-center gap-3">
           <div className="block lg:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -19,47 +44,70 @@ const Navbar = () => {
               <SlMenu />
             </button>
           </div>
+          <a href="#">
           <img className="w-14  " src={logo} alt="logo" />
-        </div>        
-        {/* Navigation Links */}        
+          </a>
+        </div>
+        {/* Navigation Links */}
         <div
           className={`absolute top-20  z-50 left-1/2 transform -translate-x-1/2 w-4/5  h-auto rounded-md py-4 px-6 transition-all duration-300 
                         ${menuOpen ? "flex flex-col items-center backdrop-blur-3xl bg-white/20" : "hidden"} 
                       lg:translate-x-0 lg:translate-y-0 lg:static lg:flex lg:w-auto lg:shadow-none lg:rounded-none lg:py-0 lg:px-0 lg:backdrop-blur-none lg:bg-transparent gap-5`}
         >
 
-          <div className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
-            <span className="text-white hover:bg group-hover:text- group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
+
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            variants={menuVariants(2)}
+            initial="initial"
+            animate="animate"
+            className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
+            <span className="text-white hover:bg group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
               About me
             </span>
             <span
               className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
             ></span>
-          </div>
-          <div className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.05 }} 
+            variants={menuVariants(5)}
+            initial="initial"
+            animate="animate"
+            className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
             <span className="text-white group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
               Skills
             </span>
             <span
               className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
             ></span>
-          </div>
-          <div className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.05 }} 
+            variants={menuVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
             <span className="text-white group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
               Works
             </span>
             <span
               className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
             ></span>
-          </div>
-          <div className="relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.05 }} 
+            variants={menuVariants(6)}
+            initial="initial"
+            animate="animate"
+            className="relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
             <span className="text-white group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
               Contact
             </span>
             <span
               className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
             ></span>
-            </div>          
+          </motion.div>
         </div>
 
         {/* Social Media Icons */}
@@ -122,7 +170,7 @@ const Navbar = () => {
         </div>
 
       </nav>
-    </div>
+    </motion.div>
   );
 };
 
