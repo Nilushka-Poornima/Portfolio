@@ -16,7 +16,7 @@ const App = () => {
       </div>
 
       {/* Main Content */}
-      <div className="container felx flex-col ">
+      <div className="felx flex-col ">
         <Navbar />
         <Home />
         <About />

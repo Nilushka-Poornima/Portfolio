@@ -97,8 +97,8 @@ const Navbar = () => {
       initial="hidden"
       animate="visible"
       className="fixed z-50 w-full backdrop-blur-lg bg-opacity-50">
-      <nav className="flex items-center justify-between lg:px-16 px-3 py-6 w-full">
-        <div className="flex items-center gap-3">
+      <nav className="flex items-center justify-between lg:px-10 px-3 py-6 w-full">
+        <div className="flex items-center gap-1">
           <div className="block lg:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
