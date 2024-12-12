@@ -3,6 +3,8 @@ import logo from "../assets/Np.png";
 import { SlMenu } from "react-icons/sl";
 import { motion } from "motion/react"
 
+
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -28,6 +30,67 @@ const Navbar = () => {
     },
   });
 
+  const handleSmoothScrollAbout = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    const offset = 60; // Adjust this value based on your fixed header's height
+
+    window.scrollTo({
+      top: targetElement.offsetTop - offset, // Scroll to the target element minus the offset
+      behavior: "smooth" // Smooth scroll behavior
+    });
+  };
+
+  const handleSmoothScrollSkill = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    const offset = 100; // Adjust this value based on your fixed header's height
+
+    window.scrollTo({
+      top: targetElement.offsetTop - offset, // Scroll to the target element minus the offset
+      behavior: "smooth" // Smooth scroll behavior
+    });
+  };
+
+  const handleSmoothScrollWorks = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    const offset = 95; // Adjust this value based on your fixed header's height
+
+    window.scrollTo({
+      top: targetElement.offsetTop - offset, // Scroll to the target element minus the offset
+      behavior: "smooth" // Smooth scroll behavior
+    });
+  };
+
+  const handleSmoothScrollContact = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    const offset = 97; // Adjust this value based on your fixed header's height
+
+    window.scrollTo({
+      top: targetElement.offsetTop - offset, // Scroll to the target element minus the offset
+      behavior: "smooth" // Smooth scroll behavior
+    });
+  };
+
+  const handleSmoothScrollTech = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    const offset = 110; // Adjust this value based on your fixed header's height
+
+    window.scrollTo({
+      top: targetElement.offsetTop - offset, // Scroll to the target element minus the offset
+      behavior: "smooth" // Smooth scroll behavior
+    });
+  };
+
+  const handleNavItemClick = () => {
+    setTimeout(() => {
+      setMenuOpen(false);
+    }, 300);
+  };
+
   return (
     <motion.div
       variants={animation(0)}
@@ -44,71 +107,102 @@ const Navbar = () => {
               <SlMenu />
             </button>
           </div>
-          <a href="#">
-          <img className="w-14  " src={logo} alt="logo" />
+          <a href="/">
+            <img className="w-14  " src={logo} alt="logo" />
           </a>
         </div>
         {/* Navigation Links */}
-        <div
-          className={`absolute top-20  z-50 left-1/2 transform -translate-x-1/2 w-4/5  h-auto rounded-md py-4 px-6 transition-all duration-300 
-                        ${menuOpen ? "flex flex-col items-center backdrop-blur-3xl bg-white/20" : "hidden"} 
+        <motion.div
+          whileInView={{ opacity: 1, x:-12 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className={`absolute top-0  z-50 w-full lg:h-auto h-screen transition-all duration-300 
+                        ${menuOpen ? "flex flex-col items-center justify-center backdrop-blur-3xl bg-black/90" : "hidden"} 
                       lg:translate-x-0 lg:translate-y-0 lg:static lg:flex lg:w-auto lg:shadow-none lg:rounded-none lg:py-0 lg:px-0 lg:backdrop-blur-none lg:bg-transparent gap-5`}
         >
 
 
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            variants={menuVariants(2)}
-            initial="initial"
-            animate="animate"
-            className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
-            <span className="text-white hover:bg group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
-              About me
-            </span>
-            <span
-              className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
-            ></span>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.05 }} 
-            variants={menuVariants(5)}
-            initial="initial"
-            animate="animate"
-            className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
-            <span className="text-white group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
-              Skills
-            </span>
-            <span
-              className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
-            ></span>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.05 }} 
-            variants={menuVariants(3)}
-            initial="initial"
-            animate="animate"
-            className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
-            <span className="text-white group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
-              Works
-            </span>
-            <span
-              className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
-            ></span>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.05 }} 
-            variants={menuVariants(6)}
-            initial="initial"
-            animate="animate"
-            className="relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
-            <span className="text-white group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
-              Contact
-            </span>
-            <span
-              className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
-            ></span>
-          </motion.div>
-        </div>
+          <a href="#About" onClick={(e) => handleSmoothScrollAbout(e, 'About')} >
+            <motion.div
+              onClick={handleNavItemClick}
+              whileHover={{ scale: 1.05 }}
+              variants={menuVariants(2)}
+              initial="initial"
+              animate="animate"
+              className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
+              <span className="text-white hover:bg group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
+                About me
+              </span>
+              <span
+                className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
+              ></span>
+            </motion.div>
+          </a>
+          <a href="#Technologies" onClick={(e) => handleSmoothScrollTech(e, 'Technologies')} >
+            <motion.div
+              onClick={handleNavItemClick}
+              whileHover={{ scale: 1.05 }}
+              variants={menuVariants(2)}
+              initial="initial"
+              animate="animate"
+              className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
+              <span className="text-white hover:bg group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
+                Technologies
+              </span>
+              <span
+                className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
+              ></span>
+            </motion.div>
+          </a>
+          <a href="#Skills" onClick={(e) => handleSmoothScrollSkill(e, 'Skills')}>
+            <motion.div
+              onClick={handleNavItemClick}
+              whileHover={{ scale: 1.05 }}
+              variants={menuVariants(5)}
+              initial="initial"
+              animate="animate"
+              className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
+              <span className="text-white group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
+                Skills
+              </span>
+              <span
+                className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
+              ></span>
+            </motion.div>
+          </a>
+          <a href="#Works" onClick={(e) => handleSmoothScrollWorks(e, 'Works')}>
+            <motion.div
+              onClick={handleNavItemClick}
+              whileHover={{ scale: 1.05 }}
+              variants={menuVariants(3)}
+              initial="initial"
+              animate="animate"
+              className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
+              <span className="text-white group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
+                Works
+              </span>
+              <span
+                className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
+              ></span>
+            </motion.div>
+          </a>
+          <a href="#Contact" onClick={(e) => handleSmoothScrollContact(e, 'Contact')}>
+            <motion.div
+              onClick={handleNavItemClick}
+              whileHover={{ scale: 1.05 }}
+              variants={menuVariants(6)}
+              initial="initial"
+              animate="animate"
+              className="relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
+              <span className="text-white group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
+                Contact
+              </span>
+              <span
+                className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
+              ></span>
+            </motion.div>
+          </a>
+        </motion.div>
 
         {/* Social Media Icons */}
         <div className="">
