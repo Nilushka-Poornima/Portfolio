@@ -14,6 +14,7 @@ const animation = (delay) => ({
 
 const Home = () => {
   return (
+    <section id="Home" className="">
     <div className="mx-2 sm:flex sm:flex-col sm:items-center lg:flex lg:flex-row lg:items-center  md:gap-3 pt-48 -z-50 ">
       <div className="flex flex-col lg:items-start  lg:text-left lg:flex-grow  ">
         <div className="flex flex-col items-center text-justify lg:flex lg:flex-col lg:items-start xl:ml-36 x w-full">
@@ -73,13 +74,14 @@ const Home = () => {
         <motion.img
           initial={{x:100, opacity:0}}
           animate={{x:0, opacity:1}}
-          transition={{duration:1, delay:0.5}}
+          transition={{duration:1, delay:0.5, ease:"easeInOut"}}
           src={profilePic}
           alt="Profile"
           className="w-56 h-56 mt-4 lg:min-w-96 lg:h-96 rounded-3xl object-cover shadow-lg"
         />
       </div>
     </div >
+    </section>
   );
 };
 
