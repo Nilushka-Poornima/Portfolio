@@ -34,7 +34,8 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 50 }}
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="my-10 text-center text-4xl">Get in Touch</motion.h1>
+        className="my-10 text-center text-4xl">Get
+        <span className="text-neutral-500"> in Touch</span></motion.h1>
         <motion.div 
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
@@ -42,7 +43,7 @@ const Contact = () => {
         className="text-center tracking-tighter">
           <p className="my-4">{CONTACT.address}</p>
           <p className="my-4">{CONTACT.phoneNo}</p>
-          <a href="#" className="text-purple-300 underline">{CONTACT.email}</a>
+          <a href="/" className="text-purple-300 underline">{CONTACT.email}</a>
         </motion.div>
       
       <motion.div 
@@ -57,21 +58,21 @@ const Contact = () => {
             name="user_name"
             placeholder="Your Name"
             required
-            className="p-3 rounded-md bg-transparent border border-white/20 placeholder-purple-300 text-white text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="p-3 rounded-md bg-transparent border border-white/20 placeholder-purple-300 text-white text-xs h-12 focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
           <input
             type="email"
             name="user_email"
             placeholder="Your Email"
             required
-            className="p-3 rounded-md bg-transparent border border-white/20 placeholder-purple-300 text-white text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="p-3 rounded-md bg-transparent border border-white/20 placeholder-purple-300 text-white text-xs h-12 focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
           <input
             name="message"
             rows="5"
             placeholder="Your Message"
             required
-            className="p-3 rounded-md bg-transparent border border-white/20 placeholder-purple-300 text-white text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="p-3 rounded-md bg-transparent border border-white/20 placeholder-purple-300 text-white text-xs h-12 focus:outline-none focus:ring-2 focus:ring-purple-500"
           ></input>
           <button
             type="submit"
