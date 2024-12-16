@@ -41,8 +41,7 @@ const DownloadButton = () => {
         ) : (
           <>
             <a
-            href="https://drive.google.com/file/d/1p22pGpZ66Yrp7_9slRoWIXrs6H-_-81-/view?usp=drive_link"
-            target="blank"
+            href="https://drive.google.com/uc?export=download&id=1p22pGpZ66Yrp7_9slRoWIXrs6H-_-81-"
             download="CV.pdf"
             onClick={handleDownload}
             className="animate-pulse flex justify-between items-center gap-2 bg-slate-900 border border-white/20 hover:bg-green-700 hover:border-green-700 hover:text-white text-white/50 px-4 py-2 rounded-full"
