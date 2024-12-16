@@ -2,6 +2,7 @@ import React from 'react'
 import aboutImg from "../assets/about.jpg"
 import { ABOUT_TEXT } from '../constants'
 import { motion } from "motion/react"
+import DownloadButton from './DownloadButton'
 
 
 const About = () => {
@@ -22,7 +23,7 @@ const About = () => {
               whileInView={{opacity:1, x:0}}
               initial={{opacity:0, x:-100}}
               transition={{ duration: 1, ease: "easeInOut" }}
-              src={aboutImg} alt="about" className="w-56 h-56 lg:min-w-96 lg:h-96 rounded-3xl object-cover shadow-lg" />
+              src={aboutImg} alt="about" className="w-56 h-56 lg:min-w-96 lg:h-96 rounded-3xl object-cover shadow-lg my-2" />
           </div>
         </div>
         <div className="w-full lg:w-1/2">
@@ -32,9 +33,10 @@ const About = () => {
             initial={{opacity:0, x:100}}
             transition={{ duration: 1, ease: "easeInOut" }}
             className="py-2 mt-8 text-sm lg:text-base  text-gray-300 max-w-sm lg:max-w-lg text-justify border-b-2 border-purple-950 m-3">
-              {ABOUT_TEXT}
+              {ABOUT_TEXT}              
             </motion.p>
           </div>
+          <DownloadButton />
         </div>
       </div>
     </div>

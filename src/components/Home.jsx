@@ -17,7 +17,7 @@ const animation = (delay) => ({
 const Home = () => {
   return (
     <section id="Home" className="">
-      <div className="mx-2 sm:flex sm:flex-col sm:items-center lg:flex lg:flex-row lg:items-center lg:  md:gap-3 pt-48 -z-50 ">
+      <div className="mx-2 sm:flex sm:flex-col sm:items-center lg:flex lg:flex-row lg:items-center lg:  md:gap-3 pt-24 lg:pt-48 -z-50 ">
         <div className="flex flex-col lg:text-left lg:flex-grow   ">
           <div className="flex flex-col items-center text-justify lg:flex lg:flex-col lg:items-center w-full">
             <motion.div

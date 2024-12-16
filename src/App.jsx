@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Works from "./components/Works";
 import Technologies from "./components/Technologies";
+import GoToTop from "./components/GoToTop";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Works />
         <Contact />
         <ContactButton />
+        <GoToTop />
       </div>
     </div>
   );
