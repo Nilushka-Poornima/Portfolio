@@ -55,7 +55,7 @@ const Navbar = () => {
   const handleSmoothScrollWorks = (e, targetId) => {
     e.preventDefault();
     const targetElement = document.getElementById(targetId);
-    const offset = 95; // Adjust this value based on your fixed header's height
+    const offset = 100; // Adjust this value based on your fixed header's height
 
     window.scrollTo({
       top: targetElement.offsetTop - offset, // Scroll to the target element minus the offset
