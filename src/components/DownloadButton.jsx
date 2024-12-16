@@ -15,7 +15,7 @@ const DownloadButton = () => {
     setTimeout(() => {
       setIsDownloading(false);
       setShowLottie(true); // Show Lottie animation after download
-    }, 900);
+    }, 1500);
   };
 
   return (
