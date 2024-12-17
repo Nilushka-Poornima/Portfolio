@@ -13,7 +13,7 @@ const About = () => {
       whileInView={{opacity:1, y:0}}
       initial={{opacity:0, y:100}}
       transition={{ duration: 1, ease: "easeInOut" }}
-        className="mt-24 lg:mb-16 p-10  text-center text-5xl">About
+        className="mt-24 lg:mb-16 p-10  text-center text-4xl font-semibold">About
         <span className="text-neutral-500"> me</span>
       </motion.h1>
       <div className="flex flex-wrap sm:flex-wrap-reverse ">
