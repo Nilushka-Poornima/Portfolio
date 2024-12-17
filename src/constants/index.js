@@ -1,76 +1,76 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import projectPureX from "../assets/projects/projectPureX.png";
+import tourSyncerApp from "../assets/projects/tourSyncerApp.png";
+import healthApp from "../assets/projects/healthApp.png";
+import projectCricHub from "../assets/projects/project-4.jpg";
 
 export const HERO_CONTENT = `I'm a full-stack  Web Developer from Sri Lanka, driven by a love for crafting innovative and efficient software solutions. With a solid foundation in front-end technologies like React.js and modern UI/UX principles, combined with average in back-end frameworks, databases, and RESTful APIs, I aim to create seamless and impactful web applications. My journey is fueled by curiosity and a commitment to continuous learning, enabling me to solve complex problems and bring ideas to life. Beyond coding, I strive to make a difference through my work, creating solutions that enhance user experiences and drive progress. Let's collaborate and build something extraordinary!`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `Hi, I'm a passionate full-stack developer with experience in building web applications using technologies like HTML, CSS, JavaScript, React.js, Node.js, MySQL, and MongoDB. Though I don't have professional experience yet, I’ve worked on various projects and enjoy solving problems and creating user-friendly solutions. I also have knowledge of Java, Python, and C, and I’m always eager to learn and grow. Outside of coding, I enjoy exploring new technologies and staying active.`;
 
-export const EXPERIENCES = [
+export const SKILLS = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    type: "Coding",
+    skill: "Full Stack Web Development",
+    Limitation: "Deployment",
+    description: `I have experience in developing and deploying full-stack web applications utilizing various technologies and languages. I have frontend frameworks knowledge including React.js, backend technologies including Node.js and Express and databases including MongoDB and MySQL. I have experience with version control using Git and have deployed applications on platforms such as Vercel and Netlify. I am more concerned with developing quality, easy to use products that are effective in the real world.`,
+    technologies: ["HTML", "CSS", "Node.js", "React.js", "Tailwind CSS", "Next.js", "PHP", "MySQL", "mongoDB"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    type: "Design & Codign",
+    skill: "Frontend Development",
+    Limitation: "Design",
+    description: `I like to design easy to navigate web applications using tools such as React.js, HTML, CSS, and JavaScript. My primary concern is to create the layouts which are both functional and aesthetically pleasing across the devices. I have worked with tools like Tailwind CSS and like to learn and enhance my designing skills to develop better interfaces.`,
+    technologies: ["HTML", "CSS", "React js", "Tailwind CSS", "Vue.js"],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    type: "Design & Coding",
+    skill: "Mobile App Development",
+    Limitation: "Deployment",
+    description: `I have worked on the creation and deployment of mobile applications using Android Studio and frameworks that include React Native. I pay much attention to the apps’ usability and adaptability to both Android and iOS. I also know how to deploy applications such as publishing an application in Google Play Store . I also like to know new things and new ways of doing things such as using Flutter to enhance the performance and functionality of the app.`,
+    technologies: ["React Native", "Android Studio", "SQLite", "Firebase", "APIs"],
   },
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    type: "Coding",
+    skill: "Systems & Software Development",
+    Limitation: "Building",
+    description: `I create systems and software with languages such as Python, Java and C, with an emphasis on the quality of the solutions. As part of my work, I apply algorithms, create applications, and solve practical problems using structured code. I always try to write the code, which will be easy to maintain and develop further and prefer projects that need logical and programming skills.`,
+    technologies: ["Java", "Python", "C"],
   },
 ];
 
-export const PROJECTS = [
+export const WORKS = [
   {
-    title: "E-Commerce Website",
-    image: project1,
+    title: "Information Website - 'Pure-X'",
+    image: projectPureX,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "A front-end website for software company called 'Pure-X' to show their works and company about and contracts",
+    technologies: ["HTML", "CSS", "React js", "Email js"],
   },
   {
-    title: "Task Management App",
-    image: project2,
+    title: "Tour Helping App - 'Tour-Syncer'",
+    image: tourSyncerApp,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "An mobile application for open world to get a help, guide and note taking their tours or daily routes",
+    technologies: ["Android Studio", "APIs", ],
   },
   {
-    title: "Portfolio Website",
-    image: project3,
+    title: "UI/UX Design for Mobile App",
+    image: healthApp,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "A high fedility wireframe design for a health care mobile App using Figma online tool",
+    technologies: ["Figma"],
   },
   {
-    title: "Blogging Platform",
-    image: project4,
+    title: "Live score website(On Going) - 'Cric-Hub' ",
+    image: projectCricHub,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A website for local cricket clubs to collaborative functions, show matches, live score, player leaderboard, club management ",
+    technologies: ["HTML", "CSS", "React js", "Email js", "Mongo DB", "MySQL", "APIs"],
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "No. 169/2 KUSUMPOKUNA, DIULANKADAWALA ",
+  phoneNo: "+94 71 684 3344 / +94 78 271 5313",
+  email: "nilushkapoornima.com",
 };

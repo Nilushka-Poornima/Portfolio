@@ -3,15 +3,22 @@ import { motion } from "framer-motion";
 import { FiPhoneCall } from "react-icons/fi";
 
 const ContactButton = () => {
+
+  const handleClick = () => {
+    window.location.href = "tel:+94716843344"; // Opens the phone dialer
+  };
+
   return (
-    <div className="fixed -bottom-20 -right-20 ">
+    <div 
+    onClick={handleClick}
+    className="fixed -bottom-20 -right-20 ">
       <div className="relative">
         <motion.svg
           animate={{ rotate: 360 }}
           transition={{ duration: 3, ease: "linear", repeat: Infinity }}
           viewBox="0 0 400 400"
           className="w-64 h-64"
-          >
+        >
           <defs>
             {/* Reduced the radius of the circular path */}
             <path
@@ -19,10 +26,10 @@ const ContactButton = () => {
               d="M 200, 200 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0"
             ></path>
           </defs>
-          <text fill="green" fontSize="14">
+          <text fill="green" fontSize="14" fontWeight={900}>
             {/* Attach the text to the smaller circle */}
             <textPath href="#circlePath" startOffset="0%" className="text-lg">
-            Contact Me
+              Contact Me
             </textPath>
           </text>
         </motion.svg>
