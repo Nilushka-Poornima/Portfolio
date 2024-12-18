@@ -260,7 +260,7 @@ const Navbar = () => {
             </button>
             </a>
 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nilushkapoornima@gmail.com" target="_blank">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nilushkapoornima@gmail.com" target="_blank" rel="noreferrer">
             <button class="lg:w-9 lg:h-9 sm:w-8 sm:h-8 flex items-center justify-center rounded-lg bg-white/10 hover:bg-white/20  group transition-all duration-300">
               <svg class="rounded-md transition-all duration-300 group-hover:scale-125" width="28" height="28" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.0065 56.1236H21.4893V35.5227L9.37109 26.4341V52.4881C9.37109 54.4997 11.001 56.1236 13.0065 56.1236Z" fill="#4285F4" />
