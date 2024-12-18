@@ -41,30 +41,50 @@ export const SKILLS = [
 export const WORKS = [
   {
     title: "Information Website - 'Pure-X'",
+    link1: "https://pure-x.vercel.app",
+    link2: "https://github.com/Nilushka-Poornima/Pure-X.git",
+    status1: "",
+    status2: "",
     image: projectPureX,
     description:
       "A front-end website for software company called 'Pure-X' to show their works and company about and contracts",
+    special: "",
     technologies: ["HTML", "CSS", "React js", "Email js"],
   },
   {
     title: "Tour Helping App - 'Tour-Syncer'",
+    link1: "https://appetize.io/app/b_7sst2r2avac727hkptelwugoom",
+    link2: "https://github.com/Nilushka-Poornima/TourSyncer.git",
+    status1: "",
+    status2: "",
     image: tourSyncerApp,
     description:
-      "An mobile application for open world to get a help, guide and note taking their tours or daily routes",
-    technologies: ["Android Studio", "APIs", ],
+      "An mobile application for open world to get a help, guide and note taking their tours or daily routes Run in Pixel 8 pro Device",
+    special: "View on Pixel 8 pro",
+    technologies: ["Android Studio", "APIs",],
   },
   {
     title: "UI/UX Design for Mobile App",
+    link1: "https://www.figma.com/design/SB8ugCgsy9fGoSn1RYKmBG/UI%2FUX-project?node-id=0-1&t=8jV8zNfDGWZOapor-1",
+    link2: "",
+    status1: "",
+    status2: "line-through pointer-events-none",
     image: healthApp,
     description:
       "A high fedility wireframe design for a health care mobile App using Figma online tool",
+    special: "",
     technologies: ["Figma"],
   },
   {
-    title: "Live score website(On Going) - 'Cric-Hub' ",
+    title: "Live score website - 'Cric-Hub' ",
+    link1: "",
+    link2: "https://github.com/orgs/Cric-Hub/repositories?",
+    status1: "line-through pointer-events-none",
+    status2: "",
     image: projectCricHub,
     description:
       "A website for local cricket clubs to collaborative functions, show matches, live score, player leaderboard, club management ",
+    special: "On Going",
     technologies: ["HTML", "CSS", "React js", "Email js", "Mongo DB", "MySQL", "APIs"],
   },
 ];
