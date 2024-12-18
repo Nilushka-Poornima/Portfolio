@@ -1,7 +1,7 @@
 import projectPureX from "../assets/projects/projectPureX.png";
 import tourSyncerApp from "../assets/projects/tourSyncerApp.png";
 import healthApp from "../assets/projects/healthApp.png";
-import projectCricHub from "../assets/projects/project-4.jpg";
+import projectCricHub from "../assets/projects/projectCricHub.png";
 
 export const HERO_CONTENT = `I'm a full-stack  Web Developer from Sri Lanka, driven by a love for crafting innovative and efficient software solutions. With a solid foundation in front-end technologies like React.js and modern UI/UX principles, combined with average in back-end frameworks, databases, and RESTful APIs, I aim to create seamless and impactful web applications. My journey is fueled by curiosity and a commitment to continuous learning, enabling me to solve complex problems and bring ideas to life. Beyond coding, I strive to make a difference through my work, creating solutions that enhance user experiences and drive progress. Let's collaborate and build something extraordinary!`;
 
@@ -72,5 +72,5 @@ export const WORKS = [
 export const CONTACT = {
   address: "No. 169/2 KUSUMPOKUNA, DIULANKADAWALA ",
   phoneNo: "+94 71 684 3344 / +94 78 271 5313",
-  email: "nilushkapoornima.com",
+  email: "nilushkapoornima@gmail.com",
 };
