@@ -32,7 +32,7 @@ const Works = () => {
                             transition={{ duration: 1, ease: "easeInOut" }}
                             className="w-full max-w-xl lg:w-3/4">
                             <h6 className="mb-2 font-semibold">{works.title}</h6>
-                            <p className="mb-2 text-neutral-400 text-justify">{works.description} <span className='text-red-600'> {works.special}</span></p>
+                            <p className="mb-2 text-neutral-400 text-justify">{works.description} <span className='text-red-600 text-xs'> {works.special}</span></p>
                             <p className='mb-2'>
                                 <a href={works.link1} className={works.status1} target='blank'>
                                     <span className='text-purple-700 '> [View Link]</span>
