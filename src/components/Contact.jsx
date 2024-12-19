@@ -47,28 +47,28 @@ const Contact = () => {
   return (
     <section id='Contact'>
       <div className="border-b border-neutral-900 lg:pb-1 pb-36">
-        <motion.h1 
+        <motion.h1
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 50 }}
           transition={{ duration: 1, ease: "easeInOut" }}
           className="my-10 text-center text-4xl font-semibold"
         >
-          Get <span className="text-neutral-500">in 
+          Get <span className="text-neutral-500">in
             <span className='animate-pulse font-extrabold'> Touch</span>
-            </span>
+          </span>
         </motion.h1>
-        <motion.div 
+        <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1, ease: "easeInOut" }}
           className="text-center tracking-tighter"
         >
-          <p className="my-4">{CONTACT.address}</p>
-          <p className="my-4">{CONTACT.phoneNo}</p>
-          <a href="/" className="text-purple-300 underline">{CONTACT.email}</a>
+          <p className="my-4 tracking-wide">{CONTACT.address}</p>
+          <p className="my-4 tracking-wide">{CONTACT.phoneNo}</p>
+          <a href="/" className="text-purple-600 tracking-wide">{CONTACT.email}</a>
         </motion.div>
-      
-        <motion.div 
+
+        <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 1, ease: "easeInOut" }}

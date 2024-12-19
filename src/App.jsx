@@ -7,8 +7,40 @@ import Navbar from "./components/Navbar";
 import Works from "./components/Works";
 import Technologies from "./components/Technologies";
 import GoToTop from "./components/GoToTop";
+import LoadingPage from "./components/LoadingPage";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const App = () => {
+
+  useGSAP(()=> {
+    let t1 = gsap.timeline();
+
+    t1.to(".box", {
+      scale: 1,
+      y: 0,
+      rotate: 360,
+      duration: 0.8,
+      stagger: {
+        amount: 0.7,
+        from: "start",
+        grid: [3, 3],
+      },
+    });
+
+    t1.to(".container", {
+      rotate: "-405deg",
+      scale: 0,
+      duration: 1,
+    });
+
+    t1.to(".wrapper", {
+      opacity: 0,
+      display: "none",
+    })
+
+  });
+
   return (
     <div className="overflow-hidden text-neutral-300 antialiased selection:bg-white/20 selection:text-cyan-50zz">
       {/* Background */}
@@ -18,6 +50,7 @@ const App = () => {
 
       {/* Main Content */}
       <div className="felx flex-col ">
+        <LoadingPage />
         <Navbar />
         <Home />
         <About />
