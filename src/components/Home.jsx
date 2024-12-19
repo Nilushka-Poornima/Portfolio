@@ -58,7 +58,7 @@ const Home = () => {
                 className="bg-gradient-to-r from-pink-400 via-slate-500 to-purple-500 bg-clip-text text-2xl lg:text-4xl tracking-tight text-transparent">
                 <span>
                   <Typewriter
-                    words={['Front-end Developer', 'Mobile App Developer', 'Sketch Designer', 'Software Developer']}
+                    words={['Front-end Developer', 'Mobile App Developer', 'Wireframe & Sketch Designer', 'Software Developer']}
                     loop={Infinity}
                     cursor
                     cursorStyle='"'

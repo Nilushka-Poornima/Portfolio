@@ -9,9 +9,9 @@ const ContactButton = () => {
   };
 
   return (
-    <div 
-    onClick={handleClick}
-    className="fixed -bottom-20 -right-20 ">
+    <div
+      onClick={handleClick}
+      className="fixed -bottom-20 -right-20 ">
       <div className="relative">
         <motion.svg
           animate={{ rotate: 360 }}
