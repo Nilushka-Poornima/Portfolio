@@ -38,7 +38,7 @@ const Experience = () => {
                                 </p>
                                 <div className="flex flex-wrap">
                                     {skills.technologies.map((tech, index) => (
-                                        <span className="mr-2 mt-2 rounded bg-cyan-950 px-2 py-1 text-sm font-medium text-purple-400 " key={index}>{tech}</span>
+                                        <span className="mr-2 mt-2 rounded bg-cyan-950 px-2 py-1 text-sm font-medium text-purple-400 hover:text-[#4ade80] cursor-not-allowed" key={index}>{tech}</span>
                                     ))}
                                 </div>
                             </motion.div>
