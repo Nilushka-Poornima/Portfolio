@@ -33,7 +33,7 @@ const Navbar = () => {
   const handleSmoothScrollAbout = (e, targetId) => {
     e.preventDefault();
     const targetElement = document.getElementById(targetId);
-    const offset = 60; // Adjust this value based on your fixed header's height
+    const offset = -30; // Adjust this value based on your fixed header's height
 
     window.scrollTo({
       top: targetElement.offsetTop - offset, // Scroll to the target element minus the offset
@@ -44,7 +44,7 @@ const Navbar = () => {
   const handleSmoothScrollSkill = (e, targetId) => {
     e.preventDefault();
     const targetElement = document.getElementById(targetId);
-    const offset = 100; // Adjust this value based on your fixed header's height
+    const offset = 30; // Adjust this value based on your fixed header's height
 
     window.scrollTo({
       top: targetElement.offsetTop - offset, // Scroll to the target element minus the offset
@@ -55,7 +55,7 @@ const Navbar = () => {
   const handleSmoothScrollWorks = (e, targetId) => {
     e.preventDefault();
     const targetElement = document.getElementById(targetId);
-    const offset = 100; // Adjust this value based on your fixed header's height
+    const offset = 22; // Adjust this value based on your fixed header's height
 
     window.scrollTo({
       top: targetElement.offsetTop - offset, // Scroll to the target element minus the offset
@@ -66,7 +66,7 @@ const Navbar = () => {
   const handleSmoothScrollContact = (e, targetId) => {
     e.preventDefault();
     const targetElement = document.getElementById(targetId);
-    const offset = 97; // Adjust this value based on your fixed header's height
+    const offset = 57; // Adjust this value based on your fixed header's height
 
     window.scrollTo({
       top: targetElement.offsetTop - offset, // Scroll to the target element minus the offset
@@ -77,7 +77,7 @@ const Navbar = () => {
   const handleSmoothScrollTech = (e, targetId) => {
     e.preventDefault();
     const targetElement = document.getElementById(targetId);
-    const offset = 220; // Adjust this value based on your fixed header's height
+    const offset = 120; // Adjust this value based on your fixed header's height
 
     window.scrollTo({
       top: targetElement.offsetTop - offset, // Scroll to the target element minus the offset
@@ -130,11 +130,11 @@ const Navbar = () => {
               initial="initial"
               animate="animate"
               className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
-              <span className="text-white hover:bg group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
+              <span className="text-white hover:bg group-hover:text-green-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
                 About me
               </span>
               <span
-                className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
+                className="absolute bottom-0 left-0 w-full h-[2px] bg-green-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
               ></span>
             </motion.div>
           </a>
@@ -146,11 +146,11 @@ const Navbar = () => {
               initial="initial"
               animate="animate"
               className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
-              <span className="text-white hover:bg group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
+              <span className="text-white hover:bg group-hover:text-green-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
                 Technologies
               </span>
               <span
-                className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
+                className="absolute bottom-0 left-0 w-full h-[2px] bg-green-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
               ></span>
             </motion.div>
           </a>
@@ -162,11 +162,11 @@ const Navbar = () => {
               initial="initial"
               animate="animate"
               className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
-              <span className="text-white group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
+              <span className="text-white group-hover:text-green-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
                 Skills
               </span>
               <span
-                className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
+                className="absolute bottom-0 left-0 w-full h-[2px] bg-green-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
               ></span>
             </motion.div>
           </a>
@@ -178,11 +178,11 @@ const Navbar = () => {
               initial="initial"
               animate="animate"
               className="lg:mb-0 relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
-              <span className="text-white group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
+              <span className="text-white group-hover:text-green-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
                 Works
               </span>
               <span
-                className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
+                className="absolute bottom-0 left-0 w-full h-[2px] bg-green-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
               ></span>
             </motion.div>
           </a>
@@ -194,11 +194,11 @@ const Navbar = () => {
               initial="initial"
               animate="animate"
               className="relative group transition-all duration-300 hover:bg-white/20 rounded px-4 py-2">
-              <span className="text-white group-hover:text-purple-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
+              <span className="text-white group-hover:text-green-400 group-hover:opacity-100 opacity-50 font-semibold transition-colors duration-300">
                 Contact
               </span>
               <span
-                className="absolute bottom-0 left-0 w-full h-[2px] bg-purple-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
+                className="absolute bottom-0 left-0 w-full h-[2px] bg-green-400 group-hover:scale-x-100 scale-x-0 transition-transform duration-300 origin-left"
               ></span>
             </motion.div>
           </a>

@@ -11,7 +11,7 @@ const Experience = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: 100 }}
                     transition={{ duration: 1, ease: "easeInOut" }}
-                    className="my-20 text-center text-4xl font-semibold">Skills</motion.h1>
+                    className="my-20 text-center text-4xl font-semibold text-[#4ade80]">Skills</motion.h1>
                 <div className="">
                     {SKILLS.map((skills, index) => (
                         <div className="mb-8 mx-2 flex flex-wrap lg:justify-center" key={index}>

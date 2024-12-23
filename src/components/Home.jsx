@@ -35,6 +35,8 @@ const Home = () => {
                     scale: 1.1,
                     transition: { duration: 0.4, ease: "easeInOut" },
                     translateY: -8,
+                    color: "#891887",
+                    fontWeight: 300,
                   }}
                   className="mr-2 text-white inline-block cursor-pointer"
                 >
@@ -45,6 +47,8 @@ const Home = () => {
                     scale: 1.1,
                     translateY: -8,
                     transition: { duration: 0.4, ease: "easeInOut" },
+                    color: "#891887",
+                    fontWeight: 300,
                   }}
                   className="text-white inline-block cursor-pointer"
                 >
@@ -55,14 +59,14 @@ const Home = () => {
                 variants={animation(0.5)}
                 initial="hidden"
                 animate="visible"
-                className="bg-gradient-to-r from-pink-400 via-slate-500 to-purple-500 bg-clip-text text-2xl lg:text-4xl tracking-tight text-transparent">
+                className="bg-green-400 bg-clip-text text-xl lg:text-3xl tracking-tight text-transparent">
                 <span>
                   <Typewriter
                     words={['Front-end Developer', 'Mobile App Developer', 'Wireframe & Sketch Designer', 'Software Developer']}
                     loop={Infinity}
                     cursor
-                    cursorStyle='"'
-                    cursorColor="purple"
+                    cursorStyle='|'
+                    cursorColor="purple-800"
                     typeSpeed={40}
                     deleteSpeed={30}
                     delaySpeed={1000}

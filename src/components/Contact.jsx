@@ -51,7 +51,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 50 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="my-10 text-center text-4xl font-semibold"
+          className="my-10 text-center text-4xl font-semibold text-[#4ade80]"
         >
           Get <span className="text-neutral-500">in
             <span className='animate-pulse font-extrabold'> Touch</span>
@@ -65,7 +65,7 @@ const Contact = () => {
         >
           <p className="my-4 tracking-wide">{CONTACT.address}</p>
           <p className="my-4 tracking-wide">{CONTACT.phoneNo}</p>
-          <a href="/" className="text-purple-600 tracking-wide">{CONTACT.email}</a>
+          <a href="/" className="text-[#4ade80] tracking-wide">{CONTACT.email}</a>
         </motion.div>
 
         <motion.div
@@ -81,25 +81,25 @@ const Contact = () => {
               name="user_name"
               placeholder="Your Name"
               required
-              className="p-3 rounded-md bg-transparent border border-white/20 placeholder-purple-300 text-white text-xs h-12 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="p-3 rounded-md bg-transparent border border-white/20 placeholder-[#babcbb] placeholder-opacity-50 text-white text-xs h-12 focus:outline-none focus:ring-1 focus:ring-[#4ade80]"
             />
             <input
               type="email"
               name="user_email"
               placeholder="Your Email"
               required
-              className="p-3 rounded-md bg-transparent border border-white/20 placeholder-purple-300 text-white text-xs h-12 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="p-3 rounded-md bg-transparent border border-white/20 placeholder-[#babcbb] placeholder-opacity-50 text-white text-xs h-12 focus:outline-none focus:ring-1 focus:ring-[#4ade80]"
             />
             <input
               name="message"
               rows="5"
               placeholder="Your Message"
               required
-              className="p-3 rounded-md bg-transparent border border-white/20 placeholder-purple-300 text-white text-xs h-12 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="p-3 rounded-md bg-transparent border border-white/20 placeholder-[#babcbb] placeholder-opacity-50 text-white text-xs h-12 focus:outline-none focus:ring-1 focus:ring-[#4ade80]"
             ></input>
             <button
               type="submit"
-              className="p-3 rounded-md bg-transparent border border-white/20 hover:bg-purple-900 transition text-white text-sm font-semibold"
+              className="p-3 rounded-md bg-transparent border border-white/20 hover:bg-[#4ade80] transition text-white text-sm font-semibold"
             >
               Send Message
             </button>
