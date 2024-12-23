@@ -32,7 +32,7 @@ const Technologies = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: 100 }}
                     transition={{ duration: 1, ease: "easeInOut" }}
-                    className="my-20 text-center text-4xl font-semibold">Technologies</motion.h1>
+                    className="my-20 text-center text-4xl font-semibold text-[#4ade80]">Technologies</motion.h1>
                 <motion.div
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: 100 }}
@@ -42,70 +42,70 @@ const Technologies = () => {
                         variants={iconVariants(2)}
                         initial="initial"
                         animate="animate"
-                        className="rounded-2xl border-4 border-neutral-700 p-4">
+                        className="rounded-2xl border-4 border-neutral-300 p-4">
                         <BiLogoHtml5 className='text-7xl text-amber-600' />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(5)}
                         initial="initial"
                         animate="animate"
-                        className="rounded-2xl border-4 border-neutral-700 p-4">
+                        className="rounded-2xl border-4 border-neutral-300 p-4">
                         <DiCss3 className='text-7xl text-sky-600' />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(3)}
                         initial="initial"
                         animate="animate"
-                        className="rounded-2xl border-4 border-neutral-700 p-4">
+                        className="rounded-2xl border-4 border-neutral-300 p-4">
                         <IoLogoJavascript className='text-7xl text-yellow-300' />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(7)}
                         initial="initial"
                         animate="animate"
-                        className="rounded-2xl border-4 border-neutral-700 p-4">
+                        className="rounded-2xl border-4 border-neutral-300 p-4">
                         <RiReactjsLine className='text-7xl text-cyan-500' />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(4)}
                         initial="initial"
                         animate="animate"
-                        className="rounded-2xl border-4 border-neutral-700 p-4">
+                        className="rounded-2xl border-4 border-neutral-300 p-4">
                         <FaNodeJs className='text-7xl text-green-500' />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(2)}
                         initial="initial"
                         animate="animate"
-                        className="rounded-2xl border-4 border-neutral-700 p-4">
+                        className="rounded-2xl border-4 border-neutral-300 p-4">
                         <TbBrandNextjs className='text-7xl' />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(6)}
                         initial="initial"
                         animate="animate"
-                        className="rounded-2xl border-4 border-neutral-700 p-4">
+                        className="rounded-2xl border-4 border-neutral-300 p-4">
                         <SiMongodb className='text-7xl text-green-500' />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(4)}
                         initial="initial"
                         animate="animate"
-                        className="rounded-2xl border-4 border-neutral-700 p-4">
+                        className="rounded-2xl border-4 border-neutral-300 p-4">
                         <GrMysql className='text-7xl text-cyan-800' />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(3)}
                         initial="initial"
                         animate="animate"
-                        className="rounded-2xl border-4 border-neutral-700 p-4">
+                        className="rounded-2xl border-4 border-neutral-300 p-4">
                         <BiLogoJava className='text-7xl text-red-600' />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(5)}
                         initial="initial"
                         animate="animate"
-                        className="rounded-2xl border-4 border-neutral-700 p-4">
+                        className="rounded-2xl border-4 border-neutral-300 p-4">
                         <AiOutlinePython className='text-7xl text-amber-300 ' />
                     </motion.div>
                 </motion.div>

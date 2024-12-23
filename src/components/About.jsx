@@ -13,7 +13,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="mt-24 lg:mb-16 p-10  text-center text-4xl font-semibold">About
+          className="mt-24 lg:mb-16 p-10  text-center text-4xl font-semibold text-[#4ade80]">About
           <span className="text-neutral-500"> me</span>
         </motion.h1>
         <div className="flex flex-wrap sm:flex-wrap-reverse ">
@@ -23,7 +23,7 @@ const About = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: -100 }}
                 transition={{ duration: 1, ease: "easeInOut" }}
-                src={aboutImg} alt="about" className="w-56 h-56 lg:min-w-96 lg:h-96 rounded-3xl object-cover shadow-lg my-2" />
+                src={aboutImg} alt="about" className="animate-pulse w-56 h-56 lg:min-w-96 lg:h-96 rounded-3xl object-cover shadow-lg my-2" />
             </div>
           </div>
           <div className="w-full lg:w-1/2">

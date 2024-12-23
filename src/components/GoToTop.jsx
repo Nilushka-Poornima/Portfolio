@@ -29,7 +29,7 @@ const GoToTop = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-9 left-5 bg-[radial-gradient(ellipse_90%_90%_at_60%_-10%,rgba(176,31,138,1),rgba(255,255,255,0.05))] hover:opacity-100 text-white p-2 opacity-50 rounded-full shadow-lg transition duration-300"
+          className="animate-bounce fixed bottom-9 left-5 bg-[radial-gradient(ellipse_90%_90%_at_60%_-10%,rgba(176,31,138,1),rgba(255,255,255,0.05))] text-white font-semibold p-2 rounded-full shadow-lg transition duration-300"
           aria-label="Go to top"
         >
           <svg

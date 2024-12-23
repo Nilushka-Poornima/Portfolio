@@ -1,3 +1,5 @@
+import React from "react";
+import BlurBackground from "./components/BlurBackground";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import ContactButton from "./components/ContactButton";
@@ -12,8 +14,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 const App = () => {
-
-  useGSAP(()=> {
+  useGSAP(() => {
     let t1 = gsap.timeline();
 
     t1.to(".box", {
@@ -37,19 +38,18 @@ const App = () => {
     t1.to(".wrapper", {
       opacity: 0,
       display: "none",
-    })
-
+    });
   });
 
   return (
-    <div className="overflow-hidden text-neutral-300 antialiased selection:bg-white/20 selection:text-cyan-50zz">
-      {/* Background */}
+    <div className="overflow-hidden text-neutral-300 antialiased selection:bg-white/20 selection:text-cyan-50">
       <div className="fixed top-0 -z-50 h-full w-full">
         <div className="absolute top-0 z-[-2] h-screen w-full bg-slate-900 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(176,31,138,0.41),rgba(255,255,255,0))]"></div>
       </div>
+      <BlurBackground />
 
       {/* Main Content */}
-      <div className="felx flex-col ">
+      <div className="flex flex-col">
         <LoadingPage />
         <Navbar />
         <Home />
