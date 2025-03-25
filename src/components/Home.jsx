@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "motion/react"
-import profilePic from "../assets/kevinRushProfile.jpg";
+import profilePic from "../assets/nilushka1.jpg";
 import { HERO_CONTENT } from "../constants/index";
 import { Typewriter } from "react-simple-typewriter";
 
