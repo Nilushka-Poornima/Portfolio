@@ -53,7 +53,7 @@ export const WORKS = [
   },
   {
     title: "Tour Helping App - 'Tour-Syncer'",
-    link1: "https://appetize.io/app/b_7sst2r2avac727hkptelwugoom",
+    link1: "https://appetize.io/app/b_7sst2r2avac727hkptelwugoom?device=pixel8pro&osVersion=14.0&toolbar=true",
     link2: "https://github.com/Nilushka-Poornima/TourSyncer.git",
     status1: "",
     status2: "",
